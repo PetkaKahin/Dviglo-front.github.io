@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  transition: 0.2s; }
+
+.logo {
+  justify-content: center;
+  display: flex; }
+  .logo h1, .logo h2, .logo h3 {
+    margin: 0; }
+  .logo .start {
+    color: #E06921; }
+
+.height-50 {
+  height: 50px; }
+
+.height-100 {
+  height: 100px; }
+
+.height-200 {
+  height: 200px; }
+
+body {
+  background-color: #212121;
+  transition-duration: 500ms; }
+
+h1, h2, h3, h4, h5, h6, a, p, input {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff; }
+
+.login {
+  margin: 0 auto;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 11px;
+  border: 1px solid #807F7F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 4px 5px #0a0a0a; }
+  .login input {
+    background-color: #212121;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    outline: none;
+    z-index: 1; }
+  .login .input {
+    padding: 5px 10px;
+    width: 234px;
+    background-color: transparent; }
+  .login .input#password {
+    max-width: 210px;
+    padding: 5px 0 5px 10px; }
+  .login input[type="submit"] {
+    padding: 3px 9px;
+    color: #E06921;
+    border: 1px solid #807F7F; }
+  .login input[type="submit"]:hover {
+    border-color: #E06921; }
+  .login .reg-and-log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 254px;
+    margin-top: 55px; }
+    .login .reg-and-log a {
+      color: #D4D4D4; }
+  .login .wrapper-input {
+    width: 256px;
+    height: 34px;
+    border-radius: 7px;
+    background: #807F7F;
+    margin: 9px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0s; }
+  .login .wrapper-input:has(> .input:focus) {
+    background: linear-gradient(90deg, #E06921, #E02121); }
+  .login .wrapper-input::before {
+    content: "";
+    width: 254px;
+    height: 32px;
+    border-radius: 7px;
+    background-color: #212121;
+    background-size: 100% 100%;
+    position: absolute; }
+  .login .placeholder {
+    position: absolute;
+    left: 8px;
+    margin: 0;
+    padding: 3px;
+    color: #807F7F;
+    font-weight: 300; }
+  .login .input:focus ~ .placeholder,
+  .login .input:not(:placeholder-shown) ~ .placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    transform: translateY(-18px);
+    background: #212121;
+    color: #D4D4D4; }
+  .login .recovery {
+    margin: 0 auto 0 5px;
+    text-decoration: none;
+    color: #D4D4D4;
+    font-size: 14px; }
+  .login .show-password, .login .hidden-password {
+    padding: 10px;
+    margin: 3px;
+    height: 27px;
+    width: 27px;
+    background-color: #212121;
+    border-radius: 6px;
+    position: inherit;
+    right: -1px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important; }
+  .login .show-password {
+    background: url("C:/Projects/Dviglo-front/login-page/assets/images/icons/show-eye.svg"); }
+  .login .hidden-password {
+    background: url("C:/Projects/Dviglo-front/login-page/assets/images/icons/hidden-eye.svg"); }
+  .login .show-password:hover, .login .hidden-password:hover {
+    background-color: #313131; }
+  .login a:hover {
+    color: #E06921; }
+  .login h2 {
+    margin: 0 9px 9px 9px; }
+
+/*# sourceMappingURL=style.css.map */

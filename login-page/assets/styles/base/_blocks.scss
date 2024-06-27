@@ -1,0 +1,28 @@
+* {
+    transition: 0.2s;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+
+    h1, h2, h3 {
+        margin: 0;
+    }
+
+    .start {
+        color: $color-accent;
+    }
+}
+
+.height-50 {
+    height: 50px;
+}
+
+.height-100 {
+    height: 100px;
+}
+
+.height-200 {
+    height: 200px;
+}

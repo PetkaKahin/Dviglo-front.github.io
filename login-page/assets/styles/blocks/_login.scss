@@ -1,0 +1,168 @@
+$width-input: 254px;
+$margin-horizontal: 15px;
+$margin-vertical: 9px;
+$height-input: 32px;
+
+.login {
+    margin: 0 auto;
+    padding: 15px;
+    width: fit-content;
+
+    border-radius: $radius-block;
+    border: 1px solid $color-border;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 3px 4px 5px rgb(10, 10, 10);
+
+    input {
+        background-color: $color-bg;
+
+        border: none;
+        border-radius: $radius-button;
+
+        font-size: 18px;
+        outline: none;
+        z-index: 1; 
+    }
+
+    .input {
+        padding: 5px 10px;
+        width: $width-input - 20px;
+        background-color: transparent;
+    }
+
+    .input#password {
+        max-width: 210px;
+        padding: 5px 0 5px 10px;
+    }
+
+    input[type="submit"] {
+        padding: 3px 9px;
+        color: $color-accent;
+        border: 1px solid $color-border;
+    }
+
+    input[type="submit"]:hover {
+        border-color: $color-accent;
+    }
+
+    .reg-and-log {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: $width-input;
+        margin-top: 55px;
+
+        a {
+            color: $color-font-pale;
+        }
+    }
+
+    .wrapper-input {
+        width: $width-input + 2px;
+        height: $height-input + 2px;
+
+        border-radius: $radius-button;
+
+        background: $color-border;
+        margin: $margin-vertical 0;
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0s;
+    }
+
+    .wrapper-input:has( > .input:focus)
+    {
+        background: linear-gradient(90deg, #E06921, #E02121);
+    }
+
+    .wrapper-input::before {
+        content: "";
+
+        width: $width-input;
+        height: $height-input;
+        border-radius: $radius-button;
+
+        background-color: $color-bg;
+        background-size: 100% 100%;
+
+        position: absolute;
+    }
+
+    .placeholder {
+        position: absolute;
+        
+        left: 8px;
+        margin: 0;
+        padding: 3px;
+
+        color: $color-border;
+        font-weight: 300;
+    }
+
+    .input:focus ~ .placeholder,
+    .input:not(:placeholder-shown) ~ .placeholder
+    {
+        font-weight: 400;
+        font-size: 12px;
+        
+        transform: translateY(-18px);
+
+        background: $color-bg;
+        color: $color-font-pale;
+    }
+
+    .recovery {
+        margin: 0 auto 0 5px;
+        text-decoration: none;
+        color: $color-font-pale;
+        font-size: 14px;
+    }
+
+    .show-password, .hidden-password {
+        padding: 10px;
+        margin: 3px;
+
+        height: 27px;
+        width: 27px;
+
+        background-color: $color-bg;
+        border-radius: 6px;
+
+        position: inherit;
+        right: -1px;
+        
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+    }
+
+    .show-password {
+        $path: $dir + "/assets/images/icons/show-eye.svg";
+        background: url($path);
+    }
+
+    .hidden-password {
+        $path: $dir + "/assets/images/icons/hidden-eye.svg";
+        background: url($path);
+    }
+
+    .show-password:hover, .hidden-password:hover {
+        background-color: #313131;
+    }
+
+    a:hover {
+        color: $color-accent;
+    }
+
+    h2 {
+        margin: 0 $margin-vertical $margin-vertical $margin-vertical;
+    }
+}
