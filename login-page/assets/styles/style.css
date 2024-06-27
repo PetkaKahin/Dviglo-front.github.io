@@ -120,9 +120,9 @@ h1, h2, h3, h4, h5, h6, a, p, input {
     background-repeat: no-repeat !important;
     background-position: center center !important; }
   .login .show-password {
-    background: url("C:/Projects/Dviglo-front/login-page/assets/images/icons/show-eye.svg"); }
+    background: url(../../assets/images/icons/show-eye.svg); }
   .login .hidden-password {
-    background: url("C:/Projects/Dviglo-front/login-page/assets/images/icons/hidden-eye.svg"); }
+    background: url(../../assets/images/icons/hidden-eye.svg); }
   .login .show-password:hover, .login .hidden-password:hover {
     background-color: #313131; }
   .login a:hover {

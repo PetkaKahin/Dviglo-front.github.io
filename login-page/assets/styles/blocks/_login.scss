@@ -145,13 +145,11 @@ $height-input: 32px;
     }
 
     .show-password {
-        $path: $dir + "/assets/images/icons/show-eye.svg";
-        background: url($path);
+        background: url(../../assets/images/icons/show-eye.svg);
     }
 
     .hidden-password {
-        $path: $dir + "/assets/images/icons/hidden-eye.svg";
-        background: url($path);
+        background: url(../../assets/images/icons/hidden-eye.svg);
     }
 
     .show-password:hover, .hidden-password:hover {
