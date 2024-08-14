@@ -43,6 +43,7 @@ $height-input: 32px;
         padding: 3px 9px;
         color: $color-accent;
         border: 1px solid $color-border;
+        cursor: pointer;
     }
 
     input[type="submit"]:hover {
